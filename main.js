@@ -35,12 +35,12 @@ tellFortune("doctor", "Tali and DAN", "Haifa", "3");
 function numberSeparators(x){
     return(x.toLocaleString());  
 }
-//Write a function that takes in a string and returns the string with all vowels removed.
+//Write a function that takes in a string and returns the string with all a,e,i,o,u removed.
 // For example, the string "Hello, World!" should be returned as "Hll, Wrd!".
 function removeVowels(x){
-    let y = x.replace(/[vowels]/gi,'');
-    console.log(y);
+    return x.replace(/[aeiou]/gi,'');
 }
+console.log(removeVowels("aaedd"));
 //Write a function that takes in a number and returns the number rounded to the nearest integer
 //. For example, the number 4.6 should be returned as 5, and the number 4.4 should be returned as 4
 //. (check out Math methods and properties).
